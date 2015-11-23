@@ -1,0 +1,89 @@
+\documentclass[margin = 1in]{extarticle}
+%math package
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+%document package
+\usepackage[utf8]{vietnam}
+\usepackage{titlesec}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage[document]{ragged2e}
+\usepackage{caption}
+\usepackage{soul}
+\usepackage{float}
+\usepackage{subfigure}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{geometry}
+\geometry{a4paper, portrait, margin=1in}
+
+%setup environment
+\setcounter{secnumdepth}{4}
+\graphicspath{{images/}}
+%
+\captionsetup{belowskip=12pt,aboveskip=4pt}
+\begin{document}
+	\input{titlepage}
+	\pagebreak
+	
+	\section[\Large]{Đề tài: Tiền xử lý ảnh - Tăng cường chất lượng ảnh}
+	
+	\begin{description}
+		\item[$\bullet$] Tác vụ cơ bản
+		\begin{itemize}
+			
+			\item[$\ast$] Khử nhiễu
+			
+			\item[$\ast$] Khử trượt
+			\item[$\ast$] Cân bằng histogram
+	
+		\end{itemize}
+		\item[$\bullet$] Tác vụ mở rộng đề xuất
+		\begin{itemize}
+			\item[$\ast$] Khử rung
+			\item[$\ast$] Làm trơn
+			\item[$\ast$] Cân bằng độ sáng
+			\item[$\ast$] Cân bằng độ tương phản
+			
+				%\item Cân bằng histogram?
+				%	\item $\cdots$
+		\end{itemize}
+		\item[$\bullet$] Tìm hiểu thêm
+		\begin{itemize}
+			\item[$\ast$] Phục hồi ảnh mờ
+			\item[$\ast$] Tăng độ phân giải
+		\end{itemize}
+	\end{description}
+
+
+	\section[\Large]{Phân công}
+	
+	\subsection{Tìm hiểu tác vụ mở rộng và lý thuyết}
+		Cá nhân tự tìm hiểu và tổng hợp.
+	\subsection{Phân công cài đặt}
+		Sẽ có chỉnh sửa trong quá trình làm việc.
+		\begin{table}[H]
+			\centering
+			\begin{tabular}{l | l}
+				Thành viên & Nhiệm vụ\\
+				\hline
+				\multirow{3}{*}{Ân} & Cân bằng histogram\\
+				& Cân bằng độ sáng\\
+				& Khử nhiễu \\
+				\hline
+				\multirow{2}{*}{An} & Làm trơn \\
+				& Cân bằng độ tương phản\\
+				& Tăng độ phân giải\\
+				\hline
+				\multirow{3}{*}{Hùng} & Khử rung\\
+				& Khử trượt \\
+				& Phục hồi ảnh mờ\\		
+			\end{tabular}
+			%\caption{Bảng phân công cài đặt}
+	\end{table}
+		
+		
+\end{document}
