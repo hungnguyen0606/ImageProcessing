@@ -63,9 +63,13 @@ void DemoMorpho()
 
 int main()
 {
-	demoConvexHull();
-	//demoThinning();
-	//demoThickening();
+	//demoGrayscaleClosing();
+	//demoGrayscaleOpening();
+	//demoBinaryDilation();
+	//demoGrayscaleErosion();
+	//demoConvexHull();
+	demoThinning();
+	demoThickening();
 	//demoSkeleton();
 	/*Mat img = imread("Image/devil.png", CV_LOAD_IMAGE_GRAYSCALE);
 	cv::threshold(img, img, thres, 255, cv::THRESH_BINARY);

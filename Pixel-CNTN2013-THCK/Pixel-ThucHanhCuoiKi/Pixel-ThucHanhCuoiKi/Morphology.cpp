@@ -309,7 +309,7 @@ Mat getSkeleton(Mat src)
 		isEnded = (cv::countNonZero(img) == ss);
 	} while (!isEnded);
 	
-
+	bitwise_not(skel, skel);
 	return skel;
 }
 
