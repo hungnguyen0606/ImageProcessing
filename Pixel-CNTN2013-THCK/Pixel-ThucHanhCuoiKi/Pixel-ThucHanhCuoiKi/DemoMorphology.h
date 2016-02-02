@@ -25,5 +25,6 @@ void demoGrayscaleOpening();
 void demoGrayscaleClosing();
 void demoMorphologyGradient();
 void demoTopHat();
+void demoSmoothingOperation();
 
 #endif

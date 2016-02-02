@@ -63,42 +63,24 @@ void DemoMorpho()
 
 int main()
 {
-	//demoGrayscaleClosing();
-	//demoGrayscaleOpening();
-	//demoBinaryDilation();
-	//demoGrayscaleErosion();
-	//demoConvexHull();
-	demoThinning();
-	demoThickening();
-	//demoSkeleton();
-	/*Mat img = imread("Image/devil.png", CV_LOAD_IMAGE_GRAYSCALE);
-	cv::threshold(img, img, thres, 255, cv::THRESH_BINARY);
-	Mat temp = img.clone();
-	bitwise_not(img, img);
-	bitwise_and(img, temp, img);
-	imshow("hello", img);*/
-	//demoFillingRegion();
-	//DemoMorpho();
-	//demoTopHat();
-	/*demoMorphologyGradient();
-	demoBinaryDilation();
-	demoBinaryErosion();*/
-	//Mat img = imread("Image/labyrinth.png", CV_LOAD_IMAGE_GRAYSCALE);
-	//imshow("temp", 255 - img);
-	int sz = 5;
-	Mat kernel = Mat(sz, sz, CV_8UC1, Scalar_<uint8_t>(0));
-	for (int i = 0; i < sz; ++i)
-		for (int j = 0; j < sz; ++j)
-		{
-			kernel.at<uint8_t>(i, j) = 30;
-			
-		}
-			
-	//imshow("Origin", img);
-	//imshow("Boundary extraction", BinaryBoundaryExtraction(img));
-	//imshow("Graydilate", MorphologyGradient(img, kernel, std::make_pair(2, 2)));
-	//imshow("Dinh non", img - GrayscaleOpening(img, kernel, std::make_pair(sz / 2, sz / 2)));
-	//cout << img - GrayscaleOpening(img, kernel, std::make_pair(sz / 2, sz / 2));
-	waitKey(0);
+	 /*demoBinaryDilation();
+	 demoBinaryErosion();
+	 demoBinaryOpening();
+	 demoBinaryClosing();*/
+
+	/* demoFillingRegion();
+	 demoSkeleton();
+	 demoThinning();
+	 demoThickening();*/
+	/* demoConvexHull();
+	 demoBinaryBoundaryExtraction();
+	 demoMorphologyGradient();
+	 demoTopHat();*/
+	/* demoGrayscaleDilation();
+	 demoGrayscaleErosion();
+	 demoGrayscaleOpening();
+	 demoGrayscaleClosing();*/
+	 
+	demoSmoothingOperation();
 	return 0;
 }

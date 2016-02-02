@@ -16,6 +16,7 @@ void demoBinaryDilation()
 	img = toBinary(img, binaryThreshold);
 	imshow("Origin", img);
 	imshow("Binary Dilation", BinaryDilation(img, CreateStructureMat(3, 1), std::make_pair(1, 1)));
+	waitKey(0);
 }
 
 void demoBinaryErosion()
@@ -24,6 +25,7 @@ void demoBinaryErosion()
 	img = toBinary(img, binaryThreshold);
 	imshow("Origin", img);
 	imshow("Binary Erosion", BinaryErosion(img, CreateStructureMat(3, 1), std::make_pair(1, 1)));
+	waitKey(0);
 }
 
 void demoBinaryOpening()
@@ -32,6 +34,7 @@ void demoBinaryOpening()
 	img = toBinary(img, binaryThreshold);
 	imshow("Origin", img);
 	imshow("Binary Opening", BinaryOpening(img, CreateStructureMat(3, 1), std::make_pair(1, 1)));
+	waitKey(0);
 }
 
 void demoBinaryClosing()
@@ -40,6 +43,7 @@ void demoBinaryClosing()
 	img = toBinary(img, binaryThreshold);
 	imshow("Origin", img);
 	imshow("Binary Closing", BinaryClosing(img, CreateStructureMat(3, 1), std::make_pair(1, 1)));
+	waitKey(0);
 }
 
 
@@ -61,6 +65,7 @@ void demoSkeleton()
 
 	imshow("Origin", img);
 	imshow("skeleton", getSkeleton(img));
+	waitKey(0);
 }
 
 
@@ -72,6 +77,7 @@ void demoThinning()
 
 	imshow("Origin", img);
 	imshow("Thinning", ThinningTransform(img));
+	waitKey(0);
 }
 
 void demoThickening()
@@ -82,6 +88,7 @@ void demoThickening()
 
 	imshow("Origin", img);
 	imshow("Thickening", ThickeningTransform(img));
+	waitKey(0);
 }
 void demoConvexHull()
 {
@@ -91,6 +98,7 @@ void demoConvexHull()
 
 	imshow("Origin", img);
 	imshow("Convex hull", ConvexHull(img));
+	waitKey(0);
 }
 
 void demoGrayscaleDilation()
@@ -146,5 +154,13 @@ void demoTopHat()
 	Mat img = imread("Image/pill.png", CV_LOAD_IMAGE_GRAYSCALE);
 	imshow("Origin", img);
 	imshow("Top hat", 2 * topHat(img, CreateStructureMat(51, 0), std::make_pair(25, 25)));
+	waitKey(0);
+}
+
+void demoSmoothingOperation()
+{
+	Mat img = imread("Image/horse.png", CV_LOAD_IMAGE_GRAYSCALE);
+	imshow("Origin", img);
+	imshow("Smoothing  operation", SmoothOperator(img, CreateStructureMat(11, 0), std::make_pair(5, 5)));
 	waitKey(0);
 }
